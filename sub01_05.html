@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>벽산</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/icon_logo.png">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0" />
+
+    <!--폰트어썸-->
+    <script src="https://kit.fontawesome.com/f3c9d07c5d.js"></script>
+</head>
+<body>
+    <header class="header_sub">
+        <!-- header.html 자리 -->
+    </header>
+
+
+    <div id="visual_sub">
+        <div class="centerbox1200">
+            <div class="sub_text">
+                ABOUT BYUCKSAN
+            </div>
+            <div class="bread">
+                <a href="#">벽산소개</a>
+                <span> > </span>
+                <a href="#">인사말</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="section_box_sub">
+            <h2>벽산소개
+                <span class="top"></span>
+                <span class="right"></span>
+                <span class="bottom"></span>
+                <span class="left"></span>
+            </h2>
+
+            <nav class="snb">
+                <ul>
+                    <li><a href="sub01_01.html">인사말</a></li>
+                    <li class="on"><a href="sub01_02.html">회사소개</a></li>
+                    <li><a href="#">벽산70년사</a></li>
+                    <li><a href="#">연혁</a></li>
+                    <li><a href="#">벽산네트워크</a></li>
+                    <li><a href="#">사업아이디어제안</a></li>
+                    <li class="on"><a href="sub01_05.html">오시는길</a></li>
+                </ul>
+                <span class="snb_line"></span>
+            </nav>
+
+            <article class="content map">
+                    <div class="centerbox1200">
+                        <div class="direct_box">
+                            <!-- 1. 약도 노드 -->
+                            <div id="daumRoughmapContainer1722996613191" class="root_daum_roughmap root_daum_roughmap_landing" style="width: 100%;"></div>
+    
+                            <!-- 2. 설치 스크립트 -->
+                            <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+    
+                            <!-- 3. 실행 스크립트 -->
+                            <script charset="UTF-8">
+                                new daum.roughmap.Lander({
+                                    "timestamp" : "1722996613191",
+                                    "key" : "2ka5p",
+                                    "mapWidth" : "100%",
+                                    "mapHeight" : "360"
+                                }).render();
+                            </script>
+                        </div>
+                    </div>
+            </article>
+    </div>
+
+
+    <footer></footer>
+
+
+    <div class="floating_menu">
+        <a href="#section1">
+            <i class="fa-regular fa-bell"></i>
+            <span>새소식</span>
+        </a>
+        <a href="#section2">
+            <i class="fa-regular fa-folder"></i>
+            <span>PRODUCT</span>
+        </a>
+        <a href="#section3">
+            <i class="fa-regular fa-pen-to-square"></i>
+            <span>온라인상담</span>
+        </a>
+        <a href="#visualbox">
+            <i class="fa-solid fa-arrow-up"></i>
+            <span>TOP</span>
+        </a>
+    </div>
+
+
+    <script src="script/jquery-3.7.1.js"></script>
+    <script src="script/action.js"></script>
+    
+    
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".section2Slide", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        keyboard: {
+            enabled: true,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+        769: {
+          slidesPerView: 3,  //브라우저가 768보다 클 때
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 3,  //브라우저가 1024보다 클 때
+          spaceBetween: 50,
+        },
+      },
+        
+        });
+    </script>
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper(".visualSlide", {
+      pagination: {
+        el: ".swiper-visual_pagination",
+      },
+    });
+  </script>
+</body>
+</html>
